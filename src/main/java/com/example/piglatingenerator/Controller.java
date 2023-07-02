@@ -1,3 +1,15 @@
+/**
+ * Controller.java
+ * Created on 02/07/2023
+ * Last modified on 02/07/2023
+ * No copyright
+ * This class represents all the functionality.
+ * Version History: 1.0 - only pure code; 2.0 - comments added.
+ *
+ * @author Mathew Philip Peedikayil
+ * @version 2.0
+ */
+
 package com.example.piglatingenerator;
 
 import javafx.fxml.FXML;
