@@ -1,2 +1,2 @@
 # pig-latin-generator
-Simple pig latin generator created using Java & JavaFX.
+Pig latin generator created using Java & JavaFX.
