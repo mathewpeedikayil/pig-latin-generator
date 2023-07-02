@@ -19,7 +19,7 @@ public class Controller {
 
     @FXML
     void displayPigLatin(MouseEvent event) {
-
+        pigLatinText.setText(userInput.getText());
     }
 
 }
