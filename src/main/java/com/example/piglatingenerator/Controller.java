@@ -8,6 +8,11 @@ import javafx.scene.text.Text;
 
 public class Controller {
 
+    private String englishInput;
+    private String[] words;
+    private String pigLatinOutput;
+    private char firstCharacterOfEachWord;
+
     @FXML
     private Button generatePigLatinButton;
 
@@ -19,8 +24,23 @@ public class Controller {
 
     @FXML
     void displayPigLatin(MouseEvent event) {
-        pigLatinText.setText(userInput.getText());
+        englishInput = userInput.getText();
+        words = englishInput.split(" ");
+        pigLatinOutput = "";
+
+        for(int i = 0; i < words.length; i++) {
+            if(i == 0) {
+                pigLatinOutput += words[i] + "AY ";
+            } else {
+                firstCharacterOfEachWord = words[i].charAt(0);
+                pigLatinOutput += words[i].substring(1) + "" + firstCharacterOfEachWord + "AY ";
+            }
+        }
+
+        pigLatinText.setText(pigLatinOutput);
     }
+    // test sentence
+    // I SLEPT MOST OF THE NIGHT
 
 }
 
