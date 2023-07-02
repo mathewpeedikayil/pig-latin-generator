@@ -8,6 +8,8 @@ import javafx.scene.text.Text;
 
 public class Controller {
 
+    private static final String AY_TXT = "AY ";
+
     private String englishInput;
     private String[] words;
     private String pigLatinOutput;
@@ -30,20 +32,20 @@ public class Controller {
 
         for(int i = 0; i < words.length; i++) {
             if(i == 0) {
-                pigLatinOutput += words[i] + "AY ";
+                pigLatinOutput += words[i] + AY_TXT;
             } else {
                 firstCharacterOfEachWord = words[i].charAt(0);
-                pigLatinOutput += words[i].substring(1) + "" + firstCharacterOfEachWord + "AY ";
+                pigLatinOutput += words[i].substring(1) + "" + firstCharacterOfEachWord + AY_TXT;
             }
         }
 
         pigLatinText.setText(pigLatinOutput);
     }
-    // test sentence
-    // I SLEPT MOST OF THE NIGHT
 
 }
 
-
 // Scene Builder
 // View -> Show Sample Controller Skeleton
+
+// test sentence
+// I SLEPT MOST OF THE NIGHT
