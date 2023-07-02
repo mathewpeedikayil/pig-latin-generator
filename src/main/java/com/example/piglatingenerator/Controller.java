@@ -43,7 +43,7 @@ public class Controller {
         pigLatinOutput = "";
 
         for(int i = 0; i < words.length; i++) {
-            if(i == 0) {
+            if(words[i].length() == 1) {
                 pigLatinOutput += words[i] + AY_TXT;
             } else {
                 firstCharacterOfEachWord = words[i].charAt(0);
